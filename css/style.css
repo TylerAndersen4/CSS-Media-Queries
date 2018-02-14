@@ -1,4 +1,54 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-size: 16px;
+}
+
+.container {
+  margin: 20px auto;
+  width: 800px;
+}
+
+.baku {
+  background-image: url(file:///Users/tylerandersen/Desktop/css-exercise-four/images/baku.jpg);
+}
+
+.london {
+  background-image: url(/Users/tylerandersen/Desktop/css-exercise-four/images/london.png);
+}
+
+.madrid {
+  background-image: url(/Users/tylerandersen/Desktop/css-exercise-four/images/madrid.jpg);
+}
+
+.rome {
+  background-image: url(/Users/tylerandersen/Desktop/css-exercise-four/images/rome.jpg);
+}
+
+.preview {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 20px;
+  width: inherit;
+  float: left;
+  height: 300px;
+}
+
+@media screen and (min-width: 575px){
+  .preview {
+    margin: 1%;
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 991px){
+  .preview {
+    margin: 1%;
+    width: 22%;
+  }
 }
